@@ -29,7 +29,7 @@ with open(input_filename, 'r') as input_file:
             except ValueError:
                 break
         else:
-            if float(line) < lowest_number:
+            if float(line) > lowest_number:
                 lowest_number = float(line)
 
 with open(output_filename, 'w') as output_file:
